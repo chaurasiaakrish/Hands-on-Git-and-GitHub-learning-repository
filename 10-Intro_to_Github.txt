@@ -1,0 +1,37 @@
+What is GitHub?
+GitHub is a website where you can store your Git Repositories online.
+It’s like a cloud storage platform specially built for developers.
+With GitHub, you can:
+
+Keep your projects backed up safely
+Access them from anywhere
+Collaborate with others on your project
+
+GitHub allows you to create public or private repositories.
+
+Connect Local Repo to GitHub:
+
+git remote add origin https://github.com/username/demo-repo.git
+git branch -M main
+git push -u origin main
+
+
+You created a project on your laptop and then made an empty GitHub repository called Portfolio-App.
+You now want to connect your local project to this GitHub repo.
+git remote add origin <repo-URL>
+
+
+Now that your local project is connected to GitHub, the next step is to make sure both sides use the same default branch name.
+This ensures smooth syncing and avoids branch mismatches.
+Github Command:
+git branch -M main
+### When you run this command, you are telling Git:
+“Rename my current branch to main, no matter what its old name was.”
+Here’s what happens step-by-step:
+1. git branch
+This is the Git command used to create, view, or rename branches.
+2. -M
+-M forces the branch to be renamed to main, even if a branch with that name already exists.
+Replace any old main branch with the new one.
+3. main
+This becomes the new name of your current branch.

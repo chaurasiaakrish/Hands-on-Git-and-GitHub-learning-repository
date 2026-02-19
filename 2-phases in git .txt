@@ -1,0 +1,10 @@
+git init:
+to initialize the .git repository
+
+git add <file_name>
+to track the files 
+
+git commit -m "Your message"
+to commit the added repository
+
+git local

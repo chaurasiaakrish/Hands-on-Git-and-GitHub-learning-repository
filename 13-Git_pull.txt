@@ -1,0 +1,22 @@
+What is git pull ?
+git pull is the command that brings the latest changes from GitHub → your local machine and merges them into your current branch.
+
+In simple terms:
+
+It downloads changes
+It merges them into your local work
+Keeps you in sync with others
+Git Command
+
+git pull 
+This pulls the latest updates from the main branch on GitHub into your local main branch.
+
+
+Fun Fact
+If you run git pull while your local branch has uncommitted changes that conflict with incoming remote changes,
+Git will stop the pull and ask you to commit/stash your local changes first.
+
+Why?
+Git wants to protect your local work from being accidentally overwritten
+
+Push sends your changes to GitHub, while pull brings others’ changes from GitHub to you.

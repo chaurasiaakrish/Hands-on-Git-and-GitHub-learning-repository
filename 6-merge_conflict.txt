@@ -1,0 +1,9 @@
+Git only raises a conflict when both branches edit the same part of a file
+and Git cannot decide which version to keep.
+
+When a merge conflict happens, Git stops and asks you to choose which change to keep.
+To fix it, you must:
+Open the conflicted file
+Manually edit it (choose correct lines and delete conflict markers)
+Mark it as resolved using git add
+Finish the merge with git commit

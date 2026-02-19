@@ -1,0 +1,18 @@
+Ignoring Files with .gitignore :
+Not every file in your project should go into Git.
+
+Create a file named .gitignore.
+Add names of files/folders you want to ignore.
+Using .gitignore is important because it keeps your repository clean, avoids accidental commits of sensitive or heavy files.
+
+
+“I don’t want these edits at all. I want the file exactly how it was before.”
+
+Git Command:
+
+git restore <file_name>
+What this command does:
+
+Replaces your file with the last committed version.
+All your uncommitted edits are removed.
+You cannot get those discarded edits back.

@@ -1,0 +1,64 @@
+Sometimes you run git add <file> and then realise -
+“Wrong file added in staging area”.
+In that case, you can remove the file from the staging area without losing your changes.
+
+Git Command:
+
+git restore --staged <file_name>
+
+What this command does:
+
+Removes the file from staging → it won’t be part of the next commit.
+Keeps your changes safe → your edited file in the working directory stays exactly the same.
+Only the staging area is cleaned, nothing is deleted.
+
+Undo the last commit but keep your changes:
+
+Sometimes you make a commit and then realise: “You committed too early!” or
+“I need to fix the message or add more changes.”
+
+In this case, you don’t want to lose your code — you only want to remove the commit, not your work.
+
+Git Command:
+
+git reset --soft HEAD~1
+What this command does:
+
+Removes the latest commit from history.
+Moves all the commit’s changes back to the staging area.
+Your code is completely safe — nothing is deleted.
+In simple terms, this command undoes your last commit without losing any work.
+Breakdown of the command:
+
+git reset → go back to an earlier commit
+--soft → keep all changes staged (safe)
+HEAD → your current commit
+~1 → one commit back
+
+git reset --soft HEAD~1 simply undoes the last commit but keeps all your changes still staged. It's like saying:
+“Remove the commit, but keep everything ready for commit again.”
+
+
+
+Undo the last commit and delete your changes
+Sometimes you don’t need the last commit at all —
+you want to completely remove it along with the changes made in it.
+
+Git Command:
+
+git reset --hard HEAD~1
+What this command does:
+
+Removes the latest commit from history.
+Deletes all the changes from that commit.
+Also removes those edits from your working files.
+This cannot be easily recovered, so use carefully.
+In simple terms, this command undoes your last commit and deletes all associated changes permanently.
+Breakdown of the command:
+
+git reset → go back to an earlier commit
+--hard → remove changes from staging area and working directory (dangerous)
+HEAD → your current commit
+~1 → one commit back
+
+git reset --hard HEAD~1 deletes the last commit and all its changes from the working directory.

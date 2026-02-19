@@ -1,0 +1,23 @@
+Once our work is done…
+we need to bring those changes back together.
+That’s where merging comes in.
+
+What is Merging in Git?
+Merging in Git means combining the changes from one branch into another.
+This is how you bring your work together after working separately on different features or bug fixes.
+
+When your feature branch is ready to be merged back into the main branch:
+git switch master
+git merge feature
+
+git switch main 
+Moves you to the branch where you want to bring in the changes (here, master).
+
+git merge feature 
+Merges all updates from the feature branch into your current branch (master).
+
+After merging, both branches’ histories are combined — your master branch now includes everything from feature
+
+What happens if you merge a branch that has already been merged before?
+Git is smart enough to detect there’s nothing new to merge.
+

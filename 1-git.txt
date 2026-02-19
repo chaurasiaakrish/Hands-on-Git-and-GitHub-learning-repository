@@ -1,0 +1,104 @@
+git status:
+Helps in checking whether the certain repository is being tracked or not
+
+git init:
+This helps in start tracking the repository 
+
+.git:
+This is the extension which got created which helps in keep the track of the changes made in the repository
+
+Project or folder vs repository:
+When the project or folder is not bieng getting tracked by the git then it is simply a project or folder.
+But,when it starts getting tracked by git then is called as repository.
+
+1️⃣ Untracked
+Meaning:
+File exists in your folder but Git does NOT know about it.
+Git status: Untracked files
+How it comes here:
+You create a new file
+Next step:
+Add it to Git
+Command:
+git add <file_name>
+
+➡ Moves file to Unmodified
+
+2️⃣ Unmodified
+Meaning:
+File is tracked by Git and has no changes since last commit.
+Git status: nothing to commit, working tree clean
+How it comes here:
+After git add + git commit
+Possible actions:
+Edit the file
+Remove the file
+Commands:
+# Edit the file (normal editing)
+# OR
+git rm <file_name>
+➡ Editing moves file to Modified
+➡ Removing moves file back to Untracked
+
+3️⃣ Modified
+Meaning:
+File is tracked but content has changed after last commit.
+Git status: modified
+How it comes here:
+You edited a tracked file
+Next step:
+Stage the file
+Command:
+git add <file_name>
+
+➡ Moves file to Staged
+
+4️⃣ Staged
+Meaning:
+File is ready to be committed (changes are selected).
+Git status: changes to be committed
+How it comes here:
+After running git add
+Next step:
+Commit the changes
+Command:
+git commit -m "message"
+
+➡ Moves file back to Unmodified
+
+🔁 Full Git File Lifecycle
+Untracked → (git add) → Unmodified → (edit) → Modified → (git add) → Staged → (git commit) → Unmodified
+
+
+git add file1 file2 file3 ...
+to move the selected files from the working dir to the staging area
+
+when you’ve already added files to the staging area using git add an now wants to commit it:
+git commit -m "Your commit message"
+A commit is like taking a snapshot of your project at that moment in time.
+It records:
+What changes were made
+When they were made
+Who made them
+Each commit gets a unique ID, so you can always return to that exact version later.
+
+
+Git Configuration
+Before you commit anything in git, you need to tell it who you are — your name and email address.
+Git uses this information - to record who made each change in a project.
+You can do this using the git config command :
+User Name :
+Your name will be attached to your commits
+git config --global user.name "Your Name"
+Email Address :
+Your email is also attached to your commits
+git config --global user.email "youremail@example.com"
+The --global flag makes the configuration apply to all repositories on your system.
+then again run :
+git commit -m "Your messsage"
+then:
+git log
+to check the made changes
+git commit -am "Update file1"
+-a automatically stages all modified tracked files.
+-m adds your commit message.

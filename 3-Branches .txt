@@ -1,0 +1,28 @@
+Why We Use Branches?
+Imagine you’re working on a project, and you want to try adding a new feature — but you don’t want to mess up your main code.
+That’s where branches come in!
+
+Branches let you:
+Work on new features or bug fixes by creating new branch for making new changes without affecting the main code.
+Experiment freely also make collaboration easy.
+Switch between different versions of your project easily.
+
+Initially, the branch is <master branch>
+
+git branch <branch-name>
+To Creates a new git branch with the specified name
+
+git branch
+shows all available branches and the * working branch is the current branch.
+
+git switch <branch-name>
+helps in switching from one branch to another
+
+It possible to use a single command to create a new branch and switch to it:
+git branch feature-branch
+git switch feature-branch
+### Git gives you a shortcut for this:
+git switch -new <c-branch name>
+The -c stands for create here.
+This single command creates a new branch named feature-branch
+Switches to it immediately, so you can start working right away.

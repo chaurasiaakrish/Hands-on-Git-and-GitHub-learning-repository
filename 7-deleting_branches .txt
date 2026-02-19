@@ -1,0 +1,17 @@
+After merging work, your branches start to pile up.
+To keep your repository clean, you should delete branches you no longer need.
+
+Why Delete a Branch?
+Because once a feature is merged, that branch has served its purpose.
+Keeping unused branches only creates confusion.
+
+Git command to delete :
+
+git branch -d branch-name
+Use this when the branch is already merged into master or another branch. Git will stop you from deleting if the branch still has unmerged work.
+
+Force Delete :
+
+git branch -D branch-name
+This deletes the branch even if it has unmerged changes.
+Use only when you're sure you don’t need the work on that branch.

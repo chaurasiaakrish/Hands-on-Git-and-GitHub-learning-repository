@@ -1,0 +1,33 @@
+Your project is now linked to GitHub, and your branch name is set correctly. 
+The final step is to push your code for the first time.
+
+This is when your local files finally appear in your GitHub repository.
+
+Github Command:
+
+git push -u origin main
+How git push -u origin main Works
+When you run this command, you are telling Git:
+“Upload my local main branch to GitHub and remember this connection for next time.”
+Here’s what happens step-by-step:
+
+1. git push
+This sends your local commits (your code changes) to GitHub.
+
+2. origin
+This is the remote name you set earlier using:
+git remote add origin <repo-url>
+It tells Git where to push — to your GitHub repository.
+
+3. main
+This is the branch you are pushing.
+You are saying:
+“Send my local main branch → GitHub main branch.”
+
+4. -u (set upstream)
+It means:
+“Git, remember this branch connection.”
+For future push, just run:
+
+git push
+Git already knows where and what to push.

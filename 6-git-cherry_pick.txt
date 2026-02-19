@@ -1,0 +1,11 @@
+Imagine you are working on your project in the main branch.
+A teammate has fixed a small bug in the feature branch, but the rest of that branch is not ready yet.
+You don’t want to merge the entire feature branch, but you do want that specific bug fix in your branch.
+
+This is exactly when Git cherry-pick comes in handy.
+
+What Is Git Cherry-Pick ?
+A tool that lets you one or more specific commits from one branch and apply them to another without merging the whole branch.
+
+git command:
+git cherry-pick <commit-hash>
