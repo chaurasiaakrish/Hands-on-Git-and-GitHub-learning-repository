@@ -1,7 +1,6 @@
-Correct Answer:
-
 git init -> git add . -> git commit -> git remote add origin <URL> -> git push -u origin main
-Explanation:
+
+
 The full process of committing and pushing for the first time :
 Initialize repo → git init
 Track files → git add .

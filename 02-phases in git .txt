@@ -6,5 +6,3 @@ to track the files
 
 git commit -m "Your message"
 to commit the added repository
-
-git local
